@@ -6,6 +6,7 @@
 
 import _ from "lodash";
 import { displayMouseCoords } from "./coordsDisplay";
+import "./style.css";
 
 document.addEventListener(
   "mousemove",
