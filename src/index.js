@@ -6,7 +6,11 @@
 
 import _ from "lodash";
 import { displayMouseCoords } from "./coordsDisplay";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/js/bootstrap.bundle.min";
 import "./style.css";
+
+const formElement = document.querySelector(".container form");
 
 document.addEventListener(
   "mousemove",
