@@ -21,3 +21,21 @@ document.addEventListener(
     });
   }, 333)
 );
+
+window.addEventListener("load", () => {
+  Array.from(formElement.elements).forEach((el) => {
+    if (el.id) {
+      const prevVal = localStorage.getItem(el.id);
+      el.value = prevVal;
+    }
+  });
+})
+
+formElement.addEventListener("submit", e => {
+  e.preventDefault;
+  Array.from(formElement.elements).forEach((el) => {
+    if (el.id) {
+      localStorage.setItem(el.id, el.value);
+    }
+  })
+})
